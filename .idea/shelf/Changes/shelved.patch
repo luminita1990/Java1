@@ -1,0 +1,187 @@
+Index: .idea/src/main/java/org.example/HomeWork/TriagleArea.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/src/main/java/org.example/HomeWork/TriagleArea.java b/.idea/src/main/java/org.example/HomeWork/TriagleArea.java
+new file mode 100644
+--- /dev/null	(date 1705665647425)
++++ b/.idea/src/main/java/org.example/HomeWork/TriagleArea.java	(date 1705665647425)
+@@ -0,0 +1,16 @@
++package HomeWork;
++
++import java.util.Scanner;
++
++public class TriagleArea {
++    //Площадь треугольника:
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        System.out.println("Введите длину основания треугольника:");
++        double base = scanner.nextDouble();
++        System.out.println("Введите высоту треугольника:");
++        double height = scanner.nextDouble();
++        double area = 0.5 * base * height;
++        System.out.println("Площадь треугольника: " + area);
++    }
++}
+Index: .idea/src/main/java/org.example/HomeWork/TrapezoidPerimeter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/src/main/java/org.example/HomeWork/TrapezoidPerimeter.java b/.idea/src/main/java/org.example/HomeWork/TrapezoidPerimeter.java
+new file mode 100644
+--- /dev/null	(date 1705665568775)
++++ b/.idea/src/main/java/org.example/HomeWork/TrapezoidPerimeter.java	(date 1705665568775)
+@@ -0,0 +1,19 @@
++package HomeWork;
++
++import java.util.Scanner;
++
++public class TrapezoidPerimeter {
++    // Периметр трапеции:
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        System.out.println("Введите длину первого основания трапеции:");
++        double base1 = scanner.nextDouble();
++        System.out.println("Введите длину второго основания трапеции:");
++        double base2 = scanner.nextDouble();
++        System.out.println("Введите длину боковой стороны трапеции:");
++        double side = scanner.nextDouble();
++        double perimeter = base1 + base2 + 2 * side;
++        System.out.println("Периметр трапеции: " + perimeter);
++    }
++}
++
+Index: .idea/src/main/java/org.example/HomeWork/SphereArea.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/src/main/java/org.example/HomeWork/SphereArea.java b/.idea/src/main/java/org.example/HomeWork/SphereArea.java
+new file mode 100644
+--- /dev/null	(date 1705665496572)
++++ b/.idea/src/main/java/org.example/HomeWork/SphereArea.java	(date 1705665496572)
+@@ -0,0 +1,15 @@
++package HomeWork;
++
++import java.util.Scanner;
++
++public class SphereArea {
++    // Площадь сферы:
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        System.out.println("Введите радиус сферы:");
++        double radius = scanner.nextDouble();
++        double area = 4 * Math.PI * Math.pow(radius, 2);
++        System.out.println("Площадь сферы: " + area);
++    }
++}
++
+Index: .idea/src/main/java/org.example/HomeWork/FactorialWhile.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/src/main/java/org.example/HomeWork/FactorialWhile.java b/.idea/src/main/java/org.example/HomeWork/FactorialWhile.java
+new file mode 100644
+--- /dev/null	(date 1705665442558)
++++ b/.idea/src/main/java/org.example/HomeWork/FactorialWhile.java	(date 1705665442558)
+@@ -0,0 +1,18 @@
++package HomeWork;
++
++import java.util.Scanner;
++
++public class FactorialWhile {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        System.out.println("Введите число для вычисления факториала:");
++        int number = scanner.nextInt();
++        int factorial = 1;
++        int i = 1;
++        while (i <= number) {
++            factorial *= i;
++            i++;
++        }
++        System.out.println("Факториал числа " + number + " = " + factorial);
++    }
++}
+Index: .idea/src/main/java/org.example/HomeWork/FactorialFor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/src/main/java/org.example/HomeWork/FactorialFor.java b/.idea/src/main/java/org.example/HomeWork/FactorialFor.java
+new file mode 100644
+--- /dev/null	(date 1705665363072)
++++ b/.idea/src/main/java/org.example/HomeWork/FactorialFor.java	(date 1705665363072)
+@@ -0,0 +1,15 @@
++package HomeWork;
++import java.util.Scanner;
++
++public class FactorialFor {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        System.out.println("Введите число для вычисления факториала:");
++        int number = scanner.nextInt();
++        int factorial = 1;
++        for (int i = 1; i <= number; i++) {
++            factorial *= i;
++        }
++        System.out.println("Факториал числа " + number + " = " + factorial);
++    }
++}
+\ No newline at end of file
+Index: .idea/src/main/java/org.example/HomeWork/FactorialdoWhile.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/src/main/java/org.example/HomeWork/FactorialdoWhile.java b/.idea/src/main/java/org.example/HomeWork/FactorialdoWhile.java
+new file mode 100644
+--- /dev/null	(date 1705665297822)
++++ b/.idea/src/main/java/org.example/HomeWork/FactorialdoWhile.java	(date 1705665297822)
+@@ -0,0 +1,17 @@
++package HomeWork;
++import java.util.Scanner;
++
++public class FactorialdoWhile {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        System.out.println("Введите число для вычисления факториала:");
++        int number = scanner.nextInt();
++        int factorial = 1;
++        int i = 1;
++        do {
++            factorial *= i;
++            i++;
++        } while (i <= number);
++        System.out.println("Факториал числа " + number + " = " + factorial);
++    }
++}
+\ No newline at end of file
+Index: .idea/src/main/java/org.example/HomeWork/CubeVolume.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/src/main/java/org.example/HomeWork/CubeVolume.java b/.idea/src/main/java/org.example/HomeWork/CubeVolume.java
+new file mode 100644
+--- /dev/null	(date 1705665189185)
++++ b/.idea/src/main/java/org.example/HomeWork/CubeVolume.java	(date 1705665189185)
+@@ -0,0 +1,15 @@
++package HomeWork;
++
++import java.util.Scanner;
++
++public class CubeVolume {
++    //Объем куба:
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        System.out.println("Введите длину стороны куба:");
++        double sideLength = scanner.nextDouble();
++        double volume = Math.pow(sideLength, 3);
++        System.out.println("Объем куба: " + volume);
++    }
++}
++
